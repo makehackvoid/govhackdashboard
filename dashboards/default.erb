@@ -1,0 +1,83 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [158, 158]
+  Dashing.numColumns = 10
+});
+</script>
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":2,"size_y":2},{"col":3,"row":1,"size_x":2,"size_y":2},{"col":5,"row":3,"size_x":2,"size_y":2},{"col":9,"row":5,"size_x":2,"size_y":2},{"col":5,"row":1,"size_x":2,"size_y":2},{"col":1,"row":3,"size_x":1,"size_y":2},{"col":2,"row":3,"size_x":1,"size_y":2},{"col":3,"row":3,"size_x":1,"size_y":2},{"col":4,"row":3,"size_x":1,"size_y":2},{"col":1,"row":5,"size_x":1,"size_y":2},{"col":2,"row":5,"size_x":1,"size_y":2},{"col":3,"row":5,"size_x":1,"size_y":2},{"col":4,"row":5,"size_x":1,"size_y":2},{"col":5,"row":5,"size_x":1,"size_y":2},{"col":6,"row":5,"size_x":1,"size_y":2},{"col":7,"row":5,"size_x":2,"size_y":2},{"col":7,"row":1,"size_x":4,"size_y":4}]')
+});
+</script>
+<% content_for :title do %>MHV GovHack Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li class="mid1" data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="ci_travis" data-view="Travis" data-unordered="true" data-title="Travis CI"></div>
+      <i class="icon-refresh icon-tagline"></i>
+    </li>
+    <li class="mid1" data-row="1" data-col="2" data-sizex="2" data-sizey="2">
+      <div data-id="git_all_issues" data-view="Graph" data-title="Open Issues" ></div>
+      <i class="icon-github icon-tagline"></i>
+    </li>
+
+
+
+    <li class="bright" data-row="1" data-col="3" data-sizex="2" data-sizey="2">
+      <div data-id="welcome" data-view="Text" data-title="Make Hack Void" data-moreinfo="github.com/makehackvoid/govhack2014"></div>
+      <i class="icon-rocket icon-tagline" style="color: rgba(0,0,0,0.7)"></i>
+    </li>
+
+
+
+    <li class="dim" data-row="1" data-col="4" data-sizex="2" data-sizey="2">
+      <div data-id="clock" data-view="Clock"></div>
+      <i class="icon-time icon-tagline"></i>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="remaining" data-view="Meter" data-title="Time remaining (%)" data-moreinfo="until 5:30pm Sunday" data-min="0" data-max="100"></div>
+    </li>
+
+    <li class="mid3" data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_voltagex" data-view="Git" data-title="Adam" data-picture="https://avatars2.githubusercontent.com/u/159567?s=100"></div>
+    </li>
+    <li class="mid3" data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_taxles" data-view="Git" data-title="Al" data-picture="https://avatars3.githubusercontent.com/u/7806962?s=100"></div>
+    </li>
+    <li class="mid3" data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_brendam" data-view="Git" data-title="Brenda" data-picture="https://avatars2.githubusercontent.com/u/247237?s=100"></div>
+    </li>
+    <li class="mid3" data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_talsidor" data-view="Git" data-title="Calum" data-picture="https://avatars0.githubusercontent.com/u/2403289?s=100"></div>
+    </li>
+    <li class="mid3" data-row="3" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_cmrn" data-view="Git" data-title="Cameron" data-picture="https://avatars1.githubusercontent.com/u/198225?s=100"></div>
+    </li>
+    <li class="mid3" data-row="5" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_jamiereid" data-view="Git" data-title="Jamie" data-picture="https://avatars0.githubusercontent.com/u/883147?s=100"></div>
+    </li>
+    <li class="mid3" data-row="5" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_itgrrl" data-view="Git" data-title="Jessica" data-picture="https://avatars0.githubusercontent.com/u/4608124?s=100"></div>
+    </li>
+    <li class="mid3" data-row="5" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_mbainrot" data-view="Git" data-title="Max" data-picture="https://avatars0.githubusercontent.com/u/2264829?s=100"></div>
+    </li>
+    <li class="mid3" data-row="5" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_prototypedino" data-view="Git" data-title="Megan" data-picture="https://avatars1.githubusercontent.com/u/4570356?s=100"></div>
+    </li>
+    <li class="mid3" data-row="5" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="git_issues_balfourianae" data-view="Git" data-title="Zak" data-picture="https://avatars0.githubusercontent.com/u/8132911?s=100"></div>
+    </li>
+
+
+    <li data-row="6" data-col="3" data-sizex="2" data-sizey="2">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#55acee;" data-moreinfo="Tweets about GovHack"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="4" data-sizey="4">
+      <div data-id="instadash" data-view="Instadash"></div>
+    </li>
+  </ul>
+</div>
