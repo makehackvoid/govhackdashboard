@@ -1,7 +1,9 @@
 #GovHackTeamDashboard
 
 Created by the [MakeHackVoid](http://makehackvoid.com) GovHack 2014 team.
+
 ![image](MHV_dashboard_screen_shot.png)
+
 Installing:
 
 *  use `bundle install` to install dependencies
